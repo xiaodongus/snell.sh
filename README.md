@@ -1,8 +1,6 @@
 # 此脚本仅用于远程连接家中局域网内机器，请勿用于任何非法行为！
-## 适用于64位Linux系统。
-## 运行完毕后屏幕显示psk，
-## 默认端口443，使用tls混淆
-# 请使用root用户运行
+## 适用于64位Linux系统。请使用root用户运行
+## 运行完毕后屏幕显示psk，默认端口443，使用tls混淆
 
 Debian & Ubuntu 用户请运行
 
@@ -24,13 +22,10 @@ chmod +x snell.sh
 在所有脚本运行结束后运行
 
 ```
-nano /etc/snell/snell-server.conf
+vi /etc/snell/snell-server.conf
 systemctl restart snell
 ```
 
-自行修改。
-
-当然你也可以用vi ^o^
 
 查看运行状态：
 
